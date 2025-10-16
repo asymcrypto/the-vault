@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🟢 Green Checkmark Guy | Free Crypto Alpha</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="vault.js" defer></script>
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="matrix-bg"></div>
+    
+    <!-- Main Container -->
+    <div class="terminal">
+        <!-- Header -->
+        <header class="terminal-header">
+            <div class="glowing-text">
+                <h1>🟢 GREEN CHECKMARK GUY</h1>
+                <div class="subtitle">FREE CRYPTO ALPHA • TIP WHAT YOU WANT</div>
+            </div>
+        </header>
+
+        <!-- Stats Bar -->
+        <div class="stats-bar">
+            <div class="stat">
+                <div class="stat-value" id="membersCount">1,284</div>
+                <div class="stat-label">DEGENS IN VAULT</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="callsCount">47</div>
+                <div class="stat-label">VETTED CALLS</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="tipsCount">3.2K</div>
+                <div class="stat-label">TIPS RECEIVED</div>
+            </div>
+        </div>
+
+        <!-- Main CTA -->
+        <div class="main-cta">
+            <div class="typewriter">
+                <h2>> NO SUBSCRIPTIONS. NO PAYMENTS.</h2>
+                <h2>> YOU PROFIT → YOU TIP.</h2>
+            </div>
+            <a href="https://t.me/+YsObQ6DntTo5NTc8" class="glow-button" id="joinButton">
+                🚀 ENTER FREE WAR ROOM
+            </a>
+            <div class="network-indicator">
+                <div class="pulse"></div>
+                LIVE TRADING DATA • 24/7 ACCESS
+            </div>
+        </div>
+
+        <!-- Wallet Addresses -->
+        <div class="wallets-section">
+            <h3>💎 TIP JAR (Only If You Profit)</h3>
+            <div class="wallet-grid">
+                <div class="wallet-card" onclick="copyAddress('0xECcaC2900682402eA17efDA528b6682F580f908B')">
+                    <div class="coin-icon">🟡</div>
+                    <div class="wallet-info">
+                        <div class="coin-name">BNB</div>
+                        <div class="address">0xECcaC29...0908B</div>
+                    </div>
+                    <div class="copy-indicator">📋</div>
+                </div>
+                
+                <div class="wallet-card" onclick="copyAddress('5u7EXNhvLVoky1riJAKCZdjsPJcjxmZkfjDCbH4w8ye5')">
+                    <div class="coin-icon">🔵</div>
+                    <div class="wallet-info">
+                        <div class="coin-name">SOLANA</div>
+                        <div class="address">5u7EXNh...8ye5</div>
+                    </div>
+                    <div class="copy-indicator">📋</div>
+                </div>
+
+                <div class="wallet-card" onclick="copyAddress('0x800e020BFfdF5D7D8C474D18F3F8381eeD39FDe7')">
+                    <div class="coin-icon">⚫</div>
+                    <div class="wallet-info">
+                        <div class="coin-name">ETHEREUM</div>
+                        <div class="address">0x800e02...FDe7</div>
+                    </div>
+                    <div class="copy-indicator">📋</div>
+                </div>
+
+                <div class="wallet-card" onclick="copyAddress('TBikeQpNoSMumR5YvzXKY2mxSZy2njU8tZ')">
+                    <div class="coin-icon">🔴</div>
+                    <div class="wallet-info">
+                        <div class="coin-name">TRON</div>
+                        <div class="address">TBikeQp...jU8tZ</div>
+                    </div>
+                    <div class="copy-indicator">📋</div>
+                </div>
+
+                <div class="wallet-card" onclick="copyAddress('bc1qyw0u2lv20n7a8a5n403saf4hvw59lpm7rw05mv')">
+                    <div class="coin-icon">🟠</div>
+                    <div class="wallet-info">
+                        <div class="coin-name">BITCOIN</div>
+                        <div class="address">bc1qyw0...rw05mv</div>
+                    </div>
+                    <div class="copy-indicator">📋</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Live Feed -->
+        <div class="live-feed">
+            <div class="feed-header">
+                <span class="blink">🔴</span> LIVE TIP FEED
+            </div>
+            <div class="feed-content" id="tipFeed">
+                <div class="feed-item">🟢 @crypto_whale tipped 0.5 ETH</div>
+                <div class="feed-item">🟢 @degen_szn tipped 1000 USDC</div>
+                <div class="feed-item">🟢 anon tipped 0.1 BTC</div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="nav-buttons">
+            <a href="framework.html" class="nav-button">🔍 OUR FRAMEWORK</a>
+            <a href="tips.html" class="nav-button">💸 TIP HISTORY</a>
+        </div>
+    </div>
+
+    <!-- Audio for interactions -->
+    <audio id="clickSound" src="assets/sounds/click.wav" preload="auto"></audio>
+</body>
+  </html>
